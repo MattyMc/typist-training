@@ -50,7 +50,7 @@ const config = {
       navbar: {
         title: "",
         logo: {
-          alt: "My Site Logo",
+          alt: "Typist Logo",
           src: "https://join-typist.com/static/logo-d8a3a7ab2188ed993841785e60891599.svg",
         },
         items: [],
