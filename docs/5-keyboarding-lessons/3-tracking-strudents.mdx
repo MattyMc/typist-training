@@ -1,0 +1,31 @@
+---
+sidebar_position: 3
+---
+
+import MultipleChoice from "@site/docs/components/multiple-choice.js";
+import { timedWritingAttempts } from "../components/problems.js";
+
+# Tracking Lesson Progress
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.loom.com/embed/b7f5b7fdc7f542209b1097aeb0e613f0?hide_share=true&hideEmbedTopBar=true"
+    frameBorder="0"
+    webkitallowfullscreen="true"
+    mozallowfullscreen="true"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+    }}
+  ></iframe>
+</div>
+
+<MultipleChoice
+  question={timedWritingAttempts.question}
+  answerList={timedWritingAttempts.answers}
+/>
+<br />
