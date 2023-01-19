@@ -1,0 +1,68 @@
+---
+sidebar_position: 2
+---
+
+import MultipleChoice from "@site/docs/components/multiple-choice.js";
+import { timedWritingAttempts } from "../components/problems.js";
+
+# Tracking Timed Writing Results
+
+## Video Overview
+
+This video demonstrates:
+
+1. What happens when students complete a timing.
+2. How you can see passed and failed tests on your grade sheet.
+3. How Typist takes the best attempt from each test.
+4. How you can set your grade sheet to easily track student results for your course.
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+  <iframe
+    src="https://www.loom.com/embed/bd3e1870f23d4aed833e7b47f907a5a6?hide_owner=true&hide_title=true"
+    frameBorder="0"
+    webkitallowfullscreen="true"
+    mozallowfullscreen="true"
+    allowFullScreen
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+    }}
+  ></iframe>
+</div>
+
+## Timed Writing Parameters
+
+When you create your first timed writing, you'll be asked to choose the parameters for your timing. We'd recommend consulting a colleague who has previously taught your course or your course outline to learn what you should use for your course. Most of the time you'll be able to use the defaults in Typist.
+
+Here are the parameters you can set and what they mean:
+
+- **Duration**: How long a test will last (e.x. 3 minutes)
+- **Required speed**: The minimum passing speed for this test (e.x. 35 netWPM)
+- **Required accuracy**: The minimum accuracy students must achieve for the test to count. Note, 98% accuracy has generally been accepted by the community as a professional standard.
+- **Maximum attempts**: How many timings the student may try. Typist will take the best attempt as the result of the test (more on this below).
+- **End test after**: E.x. 20 minutes. This means that once I give a test to the student, they will have 20 minutes to complete their test. After 20 minutes, they will no longer be able to start this test.
+
+## Understanding Attempts
+
+Typist takes the best attempt as the result of each test. Suppose you issue a single test to your students with the following parameters:
+
+- 5 attempts.
+- Required accuracy of 98%.
+- Minimum speed of 35 netWPM.
+
+For a test to qualify/count, students must meet the minimum 98% accuracy. From the attempts that counted, Typist then selects the attempt with the highest speed as the result of the test. For example:
+
+<MultipleChoice
+  question={timedWritingAttempts.question}
+  answerList={timedWritingAttempts.answers}
+/>
+<br />
+
+On your grade sheet, you will see only the best attempt from above. **If you want all attempts to count, instead of assigning 1 test with 5 attempts, assign 5 tests with 1 attempt each**.
+
+## Downloading Results
+
+If you wish to download all the results to a CSV, click the 'Download CSV' button at the bottom of your grade sheet. Easy!

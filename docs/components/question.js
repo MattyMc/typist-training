@@ -3,18 +3,19 @@ import { useState } from "react";
 
 export default function Question({ question, answers, handleClick }) {
   const showAnswers = answers.map((answer, index) => {
+    const id = `${question}-${index}`;
     return (
       <div key={index}>
         <input
           type="radio"
-          id={index}
+          id={id}
           name="option"
           value={answer.text}
           onClick={() => {
             handleClick(index);
           }}
         />
-        <label htmlFor={index}>{answer.text}</label>
+        <label htmlFor={id}>{answer.text}</label>
       </div>
     );
   });
