@@ -2,6 +2,13 @@
 sidebar_position: 2
 ---
 
+import MultipleChoice from "@site/docs/components/multiple-choice.js";
+import {
+  completingLessons1,
+  completingLessons2,
+  completingLessons3,
+} from "../components/problems.js";
+
 # Completing Keyboarding Lessons
 
 Now that you understand how lessons are structured in Typist, this video demonstrates how students complete their lessons in Typist.
@@ -11,6 +18,10 @@ Now that you understand how lessons are structured in Typist, this video demonst
 After watching the video below, take some time to jump into Typist and try some lessons for yourself!
 
 :::
+
+## Video
+
+After watching this tutorial, test your knowledge at the bottom of the page!
 
 <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
   <iframe
@@ -28,3 +39,22 @@ After watching the video below, take some time to jump into Typist and try some 
     }}
   ></iframe>
 </div>
+<br />
+
+## Knowledge Check
+
+<MultipleChoice
+  question={completingLessons1.question}
+  answerList={completingLessons1.answers}
+/>
+<br />
+<MultipleChoice
+  question={completingLessons2.question}
+  answerList={completingLessons2.answers}
+/>
+<br />
+<MultipleChoice
+  question={completingLessons3.question}
+  answerList={completingLessons3.answers}
+/>
+<br />
