@@ -1,19 +1,18 @@
-import React, { useId } from "react";
+import React from "react";
 import { useState } from "react";
 
 export default function Question({ question, answers, handleClick }) {
   const showAnswers = answers.map((answer, index) => {
-    const id = useId();
-
+    const id = `${question}-${index}`;
     return (
-      <div key={id}>
+      <div key={index}>
         <input
           type="radio"
           id={id}
           name="option"
           value={answer.text}
           onClick={() => {
-            handleClick(id);
+            handleClick(index);
           }}
         />
         <label htmlFor={id}>{answer.text}</label>
