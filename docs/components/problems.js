@@ -129,6 +129,28 @@ export const completingLessons3 = {
   ],
 };
 
+export const trackingLessonProgress = {
+  question:
+    "By default, your grade sheet will show Keyboard Basics 1 and Keyboard Basics 2. How can you see other lessons (e.x. Keyboard Basics 3, Punctuation, etc.)?",
+  answers: [
+    {
+      text: "Refresh the browser.",
+      correct: false,
+      selected: false,
+    },
+    {
+      text: "Click the column headings on your grade sheet.",
+      correct: true,
+      selected: false,
+    },
+    {
+      text: 'Say, "Hey Siri, show me other lessons."',
+      correct: false,
+      selected: false,
+    },
+  ],
+};
+
 export const problem1 = {
   question:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas felis?",
