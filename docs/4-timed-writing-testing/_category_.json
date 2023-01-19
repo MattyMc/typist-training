@@ -1,6 +1,8 @@
 {
   "label": "Timed Writing Testing",
-  "position": 6,
+  "position": 5,
+  "collapsible": false,
+  "collapsed": false,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Typist concepts."
