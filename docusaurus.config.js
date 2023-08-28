@@ -7,12 +7,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Typist Training",
-  tagline: "Teaching you how to use typist",
-  url: "https://your-docusaurus-test-site.com",
+  tagline: "Faculty Guide for Using Typist.",
+  url: "https://www.typist-training.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/Asset 32.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -51,7 +51,8 @@ const config = {
         title: "",
         logo: {
           alt: "Typist Logo",
-          src: "https://join-typist.com/static/logo-d8a3a7ab2188ed993841785e60891599.svg",
+          src: "img/logo.svg",
+          className: "custom-navbar",
         },
         items: [],
       },
